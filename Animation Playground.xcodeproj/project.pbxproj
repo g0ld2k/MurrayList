@@ -11,14 +11,22 @@
 		8340B969281A25D100B705E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340B968281A25D100B705E8 /* ContentView.swift */; };
 		8340B96B281A25D200B705E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8340B96A281A25D200B705E8 /* Assets.xcassets */; };
 		8340B96E281A25D200B705E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8340B96D281A25D200B705E8 /* Preview Assets.xcassets */; };
+		8340B975281A3AF600B705E8 /* MurrayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340B974281A3AF600B705E8 /* MurrayCardView.swift */; };
+		8340B977281A3B6200B705E8 /* MurrayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340B976281A3B6200B705E8 /* MurrayViewModel.swift */; };
+		8340B979281A45C700B705E8 /* MurrayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340B978281A45C700B705E8 /* MurrayDetailView.swift */; };
+		8340B97B281A468B00B705E8 /* MurrayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340B97A281A468B00B705E8 /* MurrayDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8340B963281A25D100B705E8 /* Animation Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animation Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8340B963281A25D100B705E8 /* Murray List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Murray List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8340B966281A25D100B705E8 /* Animation_PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation_PlaygroundApp.swift; sourceTree = "<group>"; };
 		8340B968281A25D100B705E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8340B96A281A25D200B705E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8340B96D281A25D200B705E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8340B974281A3AF600B705E8 /* MurrayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurrayCardView.swift; sourceTree = "<group>"; };
+		8340B976281A3B6200B705E8 /* MurrayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurrayViewModel.swift; sourceTree = "<group>"; };
+		8340B978281A45C700B705E8 /* MurrayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurrayDetailView.swift; sourceTree = "<group>"; };
+		8340B97A281A468B00B705E8 /* MurrayDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurrayDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +51,7 @@
 		8340B964281A25D100B705E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8340B963281A25D100B705E8 /* Animation Playground.app */,
+				8340B963281A25D100B705E8 /* Murray List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,8 +61,12 @@
 			children = (
 				8340B966281A25D100B705E8 /* Animation_PlaygroundApp.swift */,
 				8340B968281A25D100B705E8 /* ContentView.swift */,
+				8340B974281A3AF600B705E8 /* MurrayCardView.swift */,
 				8340B96A281A25D200B705E8 /* Assets.xcassets */,
 				8340B96C281A25D200B705E8 /* Preview Content */,
+				8340B976281A3B6200B705E8 /* MurrayViewModel.swift */,
+				8340B978281A45C700B705E8 /* MurrayDetailView.swift */,
+				8340B97A281A468B00B705E8 /* MurrayDetailViewModel.swift */,
 			);
 			path = "Animation Playground";
 			sourceTree = "<group>";
@@ -84,7 +96,7 @@
 			);
 			name = "Animation Playground";
 			productName = "Animation Playground";
-			productReference = 8340B963281A25D100B705E8 /* Animation Playground.app */;
+			productReference = 8340B963281A25D100B705E8 /* Murray List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8340B977281A3B6200B705E8 /* MurrayViewModel.swift in Sources */,
 				8340B969281A25D100B705E8 /* ContentView.swift in Sources */,
 				8340B967281A25D100B705E8 /* Animation_PlaygroundApp.swift in Sources */,
+				8340B97B281A468B00B705E8 /* MurrayDetailViewModel.swift in Sources */,
+				8340B979281A45C700B705E8 /* MurrayDetailView.swift in Sources */,
+				8340B975281A3AF600B705E8 /* MurrayCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +297,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.g0ld2k.test.Animation-Playground";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Murray List";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +326,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.g0ld2k.test.Animation-Playground";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Murray List";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
